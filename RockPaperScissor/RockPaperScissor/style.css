@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e0e0e0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+  
+  .container {
+    height: 250px;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+  }
+  
+  .btn {
+    margin-left: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #scissor {
+    width: 40px;
+    background-image: url("scissor.png");
+    background-size: 30px;
+    background-size: cover;
+  }
+  
+  #paper {
+    width: 40px;
+    background-image: url("paper.png");
+    background-size: 40px;
+  }
+  
+  #rock {
+    margin-left: -10px;
+    width: 53px;
+    background-color: transparent;
+    background-image: url("rock.png");
+    background-size: 48px;
+  }
+  
+  #scissor,
+  #paper,
+  #rock {
+    height: 54px;
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 8px;
+    background-position: center;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 20px;
+    transition: transform 0.2s;
+  }
+  
+  #scissor:hover,
+  #rock:hover,
+  #paper:hover {
+    transform: scale(1.1);
+  }
+  
+  #spanId {
+    margin-top: 60px;
+  }
+  
+  #clearBtn {
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  #clearBtn:hover {
+    background-color: #bebebe;
+  }
+  
+  #computerResult {
+    margin-top: 5px;
+  }
+  
+  #result {
+    margin-top: 15px;
+  }
+  
+  .items {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  #moves {
+    margin-left: 30px;
+  }
+  .container > label {
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    right: 25px;
+  }
+  
+  #head {
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 12px rgba(0, 0, 0, 0.096);
+  }
+  
